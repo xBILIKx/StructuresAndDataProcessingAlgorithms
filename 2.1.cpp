@@ -41,10 +41,15 @@ bool isSymmetric(int **arr, int n, int m){
 
 int main() {
 
+    SetConsoleOutputCP(1251);
+    
     int **matrix;
     matrix = arrayInit(rows, columns);
 
     arrInput(matrix, rows, columns);
     arrOutput(matrix, rows, columns);
-    std::cout << isSymmetric(matrix, rows, columns);
+    if(isSymmetric(matrix, rows, columns))
+        std::cout << "Матрицы семмитрична";
+    else
+        std::cout << "Матрицы не семмитрична";
 }
