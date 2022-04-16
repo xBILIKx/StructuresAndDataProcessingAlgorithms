@@ -12,7 +12,7 @@ int search(const int arr[], int size, int key) {
 
 void printArray(int A[], int size)
 {
-    for (auto i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
         std::cout << A[i] << " ";
 }
 
